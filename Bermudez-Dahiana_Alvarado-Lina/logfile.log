@@ -1,0 +1,6 @@
+[2024-05-14 14:41:47] [ INFO ] [Main:12] Empezamos nuestro metodo MAIN
+[2024-05-14 14:41:47] [ ERROR] [Main:17] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.backend.parcial.Main.main(Main.java:15)
+[2024-05-14 14:41:47] [ WARN ] [Main:19] Advertencia el metodo MAIN esta por finalizar
+[2024-05-14 14:41:47] [ INFO ] [Main:21] Finalizamos el thread MAIN
