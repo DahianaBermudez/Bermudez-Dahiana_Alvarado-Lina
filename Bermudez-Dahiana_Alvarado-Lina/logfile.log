@@ -117,3 +117,6 @@ Id: 3 - NumeroDeMatricula: 1500 - Nombre: Mike - Apellido: Bayer
 Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
 Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma, 
 Id: 3 - NumeroDeMatricula: 1500 - Nombre: Mike - Apellido: Bayer]
+[2024-05-16 21:34:20] [ INFO ] [OdontologoDaoMemory:30] Listado de odontologos obtenido: [
+Id: 8 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 9 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
