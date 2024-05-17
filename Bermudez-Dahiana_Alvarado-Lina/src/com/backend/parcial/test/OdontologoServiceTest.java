@@ -1,5 +1,4 @@
 package com.backend.parcial.test;
-import com.backend.parcial.entity.Odontologo;
 import com.backend.parcial.repository.impl.OdontologoDaoH2;
 import com.backend.parcial.repository.impl.OdontologoDaoMemory;
 import com.backend.parcial.service.impl.OdontologoService;
@@ -16,8 +15,6 @@ public class OdontologoServiceTest {
         assertFalse(odontologoService.listaOdontologos().isEmpty());
 
     }
-
-
     @Test
     void deberiaRetonarUnaListaNoVaciaDeOdontologoEnMemoria(){
 
@@ -25,4 +22,7 @@ public class OdontologoServiceTest {
         assertFalse(odontologoService.listaOdontologos().isEmpty());
 
     }
+
 }
+
+

@@ -1,38 +1,3 @@
-[2024-05-14 14:41:47] [ INFO ] [Main:12] Empezamos nuestro metodo MAIN
-[2024-05-14 14:41:47] [ ERROR] [Main:17] Error por dividir por cero 
-java.lang.ArithmeticException: / by zero
-	at com.backend.parcial.Main.main(Main.java:15)
-[2024-05-14 14:41:47] [ WARN ] [Main:19] Advertencia el metodo MAIN esta por finalizar
-[2024-05-14 14:41:47] [ INFO ] [Main:21] Finalizamos el thread MAIN
-[2024-05-14 15:26:47] [ ERROR] [Main:44] class java.lang.ClassNotFoundException : org.h2.Driver
-[2024-05-14 15:26:47] [ ERROR] [Main:50] Cannot invoke "java.sql.Connection.close()" because "connection" is null
-[2024-05-14 15:27:34] [ INFO ] [Main:29] Animal: 1 - Perro
-[2024-05-14 15:27:34] [ INFO ] [Main:29] Animal: 2 - Vaca
-[2024-05-14 15:27:34] [ INFO ] [Main:29] Animal: 3 - Perro
-[2024-05-14 15:27:34] [ INFO ] [Main:29] Animal: 4 - Sapo
-[2024-05-14 15:27:34] [ INFO ] [Main:29] Animal: 5 - Loro
-[2024-05-14 15:27:34] [ INFO ] [Main:38] Animal: 2 - Vaca
-[2024-05-14 15:27:34] [ INFO ] [Main:38] Animal: 3 - Perro
-[2024-05-14 15:27:34] [ INFO ] [Main:38] Animal: 4 - Sapo
-[2024-05-14 15:27:34] [ INFO ] [Main:38] Animal: 5 - Loro
-[2024-05-16 19:22:17] [ INFO ] [Main:29] Animal: 1 - Perro
-[2024-05-16 19:22:17] [ INFO ] [Main:29] Animal: 2 - Vaca
-[2024-05-16 19:22:17] [ INFO ] [Main:29] Animal: 3 - Perro
-[2024-05-16 19:22:17] [ INFO ] [Main:29] Animal: 4 - Sapo
-[2024-05-16 19:22:17] [ INFO ] [Main:29] Animal: 5 - Loro
-[2024-05-16 19:22:17] [ INFO ] [Main:38] Animal: 2 - Vaca
-[2024-05-16 19:22:17] [ INFO ] [Main:38] Animal: 3 - Perro
-[2024-05-16 19:22:17] [ INFO ] [Main:38] Animal: 4 - Sapo
-[2024-05-16 19:22:17] [ INFO ] [Main:38] Animal: 5 - Loro
-[2024-05-16 19:23:49] [ INFO ] [Main:29] Animal: 1 - Perro
-[2024-05-16 19:23:50] [ INFO ] [Main:29] Animal: 2 - Vaca
-[2024-05-16 19:23:50] [ INFO ] [Main:29] Animal: 3 - Perro
-[2024-05-16 19:23:50] [ INFO ] [Main:29] Animal: 4 - Sapo
-[2024-05-16 19:23:50] [ INFO ] [Main:29] Animal: 5 - Loro
-[2024-05-16 19:23:50] [ INFO ] [Main:38] Animal: 2 - Vaca
-[2024-05-16 19:23:50] [ INFO ] [Main:38] Animal: 3 - Perro
-[2024-05-16 19:23:50] [ INFO ] [Main:38] Animal: 4 - Sapo
-[2024-05-16 19:23:50] [ INFO ] [Main:38] Animal: 5 - Loro
 [2024-05-16 20:50:51] [ INFO ] [OdontologoDaoH2:36] odontologo guardado: com.backend.parcial.entity.Odontologo@24c22fe
 [2024-05-16 20:53:42] [ ERROR] [OdontologoDaoH2:39] La base de datos puede que ya esté siendo utilizada: "C:/Users/dayit/odontologos.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
 Database may be already in use: "C:/Users/dayit/odontologos.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
@@ -120,3 +85,124 @@ Id: 3 - NumeroDeMatricula: 1500 - Nombre: Mike - Apellido: Bayer]
 [2024-05-16 21:34:20] [ INFO ] [OdontologoDaoMemory:30] Listado de odontologos obtenido: [
 Id: 8 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
 Id: 9 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 07:44:44] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 07:44:45] [ INFO ] [OdontologoDaoMemory:30] Listado de odontologos obtenido desde Memory: [
+Id: 8 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 9 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 08:03:42] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 08:03:42] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 8 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 9 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 08:50:12] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 08:50:12] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 8 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 9 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 08:55:33] [ INFO ] [OdontologoDaoMemory:31] odontologo guardado en Memory: 
+Id: null - NumeroDeMatricula: 111 - Nombre: Lina - Apellido: alvarado
+[2024-05-17 08:55:34] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 08:55:34] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 8 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 9 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 09:34:08] [ INFO ] [OdontologoDaoMemory:38] odontologo guardado en Memory: 
+Id: 3 - NumeroDeMatricula: 111 - Nombre: Lina - Apellido: alvarado
+[2024-05-17 09:34:08] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 09:34:08] [ INFO ] [OdontologoDaoMemory:44] Listado de odontologos obtenido desde Memory: [
+Id: 4 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 5 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 09:49:19] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 09:49:19] [ INFO ] [OdontologoDaoMemory:38] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 09:49:33] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 09:49:33] [ INFO ] [OdontologoDaoMemory:36] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 09:50:54] [ INFO ] [OdontologoDaoMemory:30] odontologo guardado en Memory: 
+Id: 3 - NumeroDeMatricula: 111 - Nombre: Lina - Apellido: alvarado
+[2024-05-17 09:50:54] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 09:50:54] [ INFO ] [OdontologoDaoMemory:36] Listado de odontologos obtenido desde Memory: [
+Id: 4 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 5 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 09:52:07] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 09:52:07] [ INFO ] [OdontologoDaoMemory:36] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 09:54:00] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 09:54:00] [ INFO ] [OdontologoDaoMemory:36] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra]
+[2024-05-17 10:00:09] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 10:00:09] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 3 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]
+[2024-05-17 10:00:47] [ INFO ] [OdontologoDaoMemory:31] odontologo guardado en Memory: 
+Id: 4 - NumeroDeMatricula: 111 - Nombre: Lina - Apellido: alvarado
+[2024-05-17 10:00:47] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 10:00:47] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 5 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 6 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 7 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]
+[2024-05-17 14:00:45] [ INFO ] [OdontologoDaoMemory:31] odontologo guardado en Memory: 
+Id: 4 - NumeroDeMatricula: 111 - Nombre: Lina - Apellido: alvarado
+[2024-05-17 14:00:45] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 14:00:45] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 5 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 6 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 7 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]
+[2024-05-17 14:03:53] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 14:03:53] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 3 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]
+[2024-05-17 14:06:13] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 14:06:13] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 3 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]
+[2024-05-17 14:06:34] [ INFO ] [OdontologoDaoMemory:31] odontologo guardado en Memory: 
+Id: 4 - NumeroDeMatricula: 111 - Nombre: Lina - Apellido: alvarado
+[2024-05-17 14:06:35] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 14:06:35] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 5 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 6 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 7 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]
+[2024-05-17 14:08:40] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenido: [
+Id: 1 - NumeroDeMatricula: 222 - Nombre: Carlos - Apellido: Lopez, 
+Id: 2 - NumeroDeMatricula: 223 - Nombre: Luis - Apellido: Roma]
+[2024-05-17 14:08:40] [ INFO ] [OdontologoDaoMemory:37] Listado de odontologos obtenido desde Memory: [
+Id: 1 - NumeroDeMatricula: 2558 - Nombre: Jan - Apellido: Perez, 
+Id: 2 - NumeroDeMatricula: 255 - Nombre: Andrea - Apellido: Parra, 
+Id: 3 - NumeroDeMatricula: 2566 - Nombre: Andres - Apellido: Benitez]

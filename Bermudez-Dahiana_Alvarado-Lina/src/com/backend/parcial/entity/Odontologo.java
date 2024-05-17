@@ -13,7 +13,7 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
-    public Odontologo(String apellido, String nombre, int numeroDeMatricula) {
+    public Odontologo(int numeroDeMatricula, String nombre, String apellido) {
         this.apellido = apellido;
         this.nombre = nombre;
         this.numeroDeMatricula = numeroDeMatricula;
@@ -52,7 +52,7 @@ public class Odontologo {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "\nId: " + id + " - NumeroDeMatricula: " + numeroDeMatricula + " - Nombre: " + nombre + " - Apellido: " + apellido;
     }
 }

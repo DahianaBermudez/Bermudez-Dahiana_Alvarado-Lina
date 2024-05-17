@@ -1,5 +1,4 @@
 package com.backend.parcial.repository.impl;
-
 import com.backend.parcial.entity.Odontologo;
 import com.backend.parcial.repository.IDao;
 import org.apache.log4j.Logger;

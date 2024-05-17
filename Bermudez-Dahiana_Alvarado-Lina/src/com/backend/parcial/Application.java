@@ -1,5 +1,4 @@
 package com.backend.parcial;
-
 import com.backend.parcial.repository.dbConnection.H2Connection;
 
 public class Application {
