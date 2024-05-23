@@ -1,4 +1,4 @@
-package com.backend.parcial.entity;
+package com.backend.clinica_odontologica.entity;
 
 public class Odontologo {
     private Long id;
@@ -13,7 +13,7 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
-    public Odontologo(int numeroDeMatricula, String nombre, String apellido) {
+    public Odontologo(String apellido, String nombre, int numeroDeMatricula) {
         this.apellido = apellido;
         this.nombre = nombre;
         this.numeroDeMatricula = numeroDeMatricula;
@@ -52,7 +52,7 @@ public class Odontologo {
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return "\nId: " + id + " - NumeroDeMatricula: " + numeroDeMatricula + " - Nombre: " + nombre + " - Apellido: " + apellido;
     }
 }

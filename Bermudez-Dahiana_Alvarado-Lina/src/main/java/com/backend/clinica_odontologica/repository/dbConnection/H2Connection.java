@@ -1,4 +1,5 @@
-package com.backend.parcial.repository.dbConnection;
+package com.backend.clinica_odontologica.repository.dbConnection;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

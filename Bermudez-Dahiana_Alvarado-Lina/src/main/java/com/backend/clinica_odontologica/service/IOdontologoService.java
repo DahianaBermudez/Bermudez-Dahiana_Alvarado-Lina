@@ -1,6 +1,6 @@
-package com.backend.parcial.service;
+package com.backend.clinica_odontologica.service;
 
-import com.backend.parcial.entity.Odontologo;
+import com.backend.clinica_odontologica.entity.Odontologo;
 
 import java.util.List;
 

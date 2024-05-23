@@ -1,15 +1,18 @@
-package com.backend.parcial.repository.impl;
-import com.backend.parcial.entity.Odontologo;
-import com.backend.parcial.repository.IDao;
-import org.apache.log4j.Logger;
-import com.backend.parcial.repository.dbConnection.H2Connection;
+package com.backend.clinica_odontologica.repository.impl;
+
+import com.backend.clinica_odontologica.entity.Odontologo;
+import com.backend.clinica_odontologica.repository.IDao;
+import com.backend.clinica_odontologica.repository.dbConnection.H2Connection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class OdontologoDaoH2 implements IDao<Odontologo> {
 
-    private final Logger LOGGER = Logger.getLogger(OdontologoDaoH2.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(OdontologoDaoH2.class);
 
     @Override
     public Odontologo guardar(Odontologo odontologo) {
