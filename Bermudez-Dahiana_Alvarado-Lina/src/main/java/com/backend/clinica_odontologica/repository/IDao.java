@@ -3,6 +3,7 @@ package com.backend.clinica_odontologica.repository;
 import java.util.List;
 
 public interface IDao<T> {
-    T guardar(T t);
-     List<T> listar();
+    T registrar(T t);
+     List<T> listarTodos();
+    T buscarPorId(Long id);
 }

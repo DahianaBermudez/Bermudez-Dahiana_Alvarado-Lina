@@ -1,6 +1,7 @@
 package com.backend.clinica_odontologica.repository.impl;
 
 import com.backend.clinica_odontologica.entity.Odontologo;
+import com.backend.clinica_odontologica.entity.Paciente;
 import com.backend.clinica_odontologica.repository.IDao;
 import com.backend.clinica_odontologica.repository.dbConnection.H2Connection;
 import org.slf4j.Logger;
@@ -15,7 +16,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
     private final Logger LOGGER = LoggerFactory.getLogger(OdontologoDaoH2.class);
 
     @Override
-    public Odontologo guardar(Odontologo odontologo) {
+    public Odontologo registrar(Odontologo odontologo) {
         String insert = "INSERT INTO Odontologos(NUMERODEMATRICULA, NOMBRE, APELLIDO) VALUES(?, ?, ?)";
         Connection connection = null;
         Odontologo odontologoGuardado = null;
@@ -62,7 +63,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
     }
 
     @Override
-    public List<Odontologo> listar() {
+    public List<Odontologo> listarTodos() {
         Connection connection = null;
         List<Odontologo> odontologos = new ArrayList<>();
 
@@ -94,5 +95,9 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
         LOGGER.info("Listado de odontologos obtenido: " + odontologos);
 
         return odontologos;
+    }
+    @Override
+    public Odontologo buscarPorId(Long id) {
+        return null;
     }
 }
