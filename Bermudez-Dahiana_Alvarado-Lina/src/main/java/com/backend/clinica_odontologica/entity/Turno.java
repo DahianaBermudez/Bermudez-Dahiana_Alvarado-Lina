@@ -1,21 +1,21 @@
 package com.backend.clinica_odontologica.entity;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Turno {
     private Long id;
     private Paciente paciente;
     private Odontologo odontologo;
-    private Date fechaYhora;
+    private LocalDateTime fechaYhora;
 
-    public Turno(Long id, Paciente paciente, Odontologo odontologo, Date fechaYhora) {
+    public Turno(Long id, Paciente paciente, Odontologo odontologo, LocalDateTime fechaYhora) {
         this.id = id;
         this.paciente = paciente;
         this.odontologo = odontologo;
         this.fechaYhora = fechaYhora;
     }
 
-    public Turno(Paciente paciente, Odontologo odontologo, Date fechaYhora) {
+    public Turno(Paciente paciente, Odontologo odontologo, LocalDateTime fechaYhora) {
         this.paciente = paciente;
         this.odontologo = odontologo;
         this.fechaYhora = fechaYhora;
@@ -45,11 +45,11 @@ public class Turno {
         this.odontologo = odontologo;
     }
 
-    public Date getFechaYhora() {
+    public LocalDateTime getFechaYhora() {
         return fechaYhora;
     }
 
-    public void setFechaYhora(Date fechaYhora) {
+    public void setFechaYhora(LocalDateTime fechaYhora) {
         this.fechaYhora = fechaYhora;
     }
 }

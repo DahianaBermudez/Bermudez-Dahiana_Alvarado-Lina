@@ -1,25 +1,20 @@
-package com.backend.clinica_odontologica.entity;
+package com.backend.clinica_odontologica.dto.salida;
 
-public class Domicilio {
-
+public class DomicilioSalidaDto {
     private Long id;
+
     private String calle;
+
     private int numero;
+
     private String localidad;
+
     private String provincia;
 
-    public Domicilio(){
-
+    public DomicilioSalidaDto() {
     }
 
-    public Domicilio(String calle, int numero, String localidad, String provincia) {
-        this.calle = calle;
-        this.numero = numero;
-        this.localidad = localidad;
-        this.provincia = provincia;
-    }
-
-    public Domicilio(Long id, String calle, int numero, String localidad, String provincia) {
+    public DomicilioSalidaDto(Long id, String calle, int numero, String localidad, String provincia) {
         this.id = id;
         this.calle = calle;
         this.numero = numero;
@@ -65,10 +60,5 @@ public class Domicilio {
 
     public void setProvincia(String provincia) {
         this.provincia = provincia;
-    }
-
-    @Override
-    public String toString() {
-        return "Id: " + id + " - Calle: " + calle + " - Numero: " + numero + " - Localidad: " + localidad + " - Provincia: " + provincia;
     }
 }

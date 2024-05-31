@@ -19,9 +19,4 @@ public class ClinicaOdontologicaApplication {
 		H2Connection.crearTablas();
 		LOGGER.info("clinicaOdontologica is now running...");
 	}
-	@GetMapping("/hola")
-	public String saludar(){
-		return "clinica odontologica";
-	}
-
 }
