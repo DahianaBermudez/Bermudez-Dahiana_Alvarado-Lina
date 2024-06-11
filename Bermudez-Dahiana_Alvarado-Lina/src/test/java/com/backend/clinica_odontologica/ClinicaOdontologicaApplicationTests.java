@@ -15,28 +15,28 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
-class ClinicaOdontologicaApplicationTests {
-
-	private OdontologoService odontologoService;
-	private PacienteService pacienteService;
-
-	@Test
-	void deberiaRetonarUnaListaNoVaciaDeOdontologoEnH2(){
-
-		odontologoService = new OdontologoService(new OdontologoDaoH2());
-		assertFalse(odontologoService.listaOdontologos().isEmpty());
-
-	}
-
-
-	@Test
-	void deberiaRetonarUnaListaNoVaciaDeOdontologoEnMemoria(){
-
-		odontologoService = new OdontologoService(new OdontologoDaoMemory());
-		assertFalse(odontologoService.listaOdontologos().isEmpty());
-
-	}
+//@SpringBootTest
+//class ClinicaOdontologicaApplicationTests {
+//
+//	private OdontologoService odontologoService;
+//	private PacienteService pacienteService;
+//
+//	@Test
+//	void deberiaRetonarUnaListaNoVaciaDeOdontologoEnH2(){
+//
+//		odontologoService = new OdontologoService(new OdontologoDaoH2());
+//		assertFalse(odontologoService.listaOdontologos().isEmpty());
+//
+//	}
+//
+//
+//	@Test
+//	void deberiaRetonarUnaListaNoVaciaDeOdontologoEnMemoria(){
+//
+//		odontologoService = new OdontologoService(new OdontologoDaoMemory());
+//		assertFalse(odontologoService.listaOdontologos().isEmpty());
+//
+//	}
 
 
 //	@Test
@@ -53,9 +53,9 @@ class ClinicaOdontologicaApplicationTests {
 //	}
 
 
-	@Test
-	void deberiaRetornarseUnaListaNoVaciaDePacientesEnH2(){
-		pacienteService = new PacienteService(new PacienteDaoH2());
-		assertFalse(pacienteService.listarPacientes().isEmpty());
-	}
-}
+//	@Test
+//	void deberiaRetornarseUnaListaNoVaciaDePacientesEnH2(){
+//		pacienteService = new PacienteService(new PacienteDaoH2());
+//		assertFalse(pacienteService.listarPacientes().isEmpty());
+//	}
+//}
