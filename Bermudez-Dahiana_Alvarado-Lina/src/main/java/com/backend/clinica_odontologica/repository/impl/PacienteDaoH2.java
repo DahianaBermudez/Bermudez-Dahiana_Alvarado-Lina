@@ -40,7 +40,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
             preparedStatement.setLong(5, domicilioRegistrado.getId());
             preparedStatement.execute();
 
-            pacienteRegistrado = new Paciente(paciente.getNombre(), paciente.getApellido(), paciente.getDni(), paciente.getFechaIngreso(), domicilioRegistrado);
+            //pacienteRegistrado = new Paciente(paciente.getNombre(), paciente.getApellido(), paciente.getDni(), paciente.getFechaIngreso(), domicilioRegistrado);
 
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             while(resultSet.next()) {
