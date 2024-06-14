@@ -32,7 +32,7 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
             preparedStatement.execute();
 
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
-            domicilioRegistrado = new Domicilio(domicilio.getCalle(), domicilio.getNumero(), domicilio.getLocalidad(), domicilio.getProvincia());
+           // domicilioRegistrado = new Domicilio(domicilio.getCalle(), domicilio.getNumero(), domicilio.getLocalidad(), domicilio.getProvincia());
 
             while (resultSet.next()){
                 domicilioRegistrado.setId(resultSet.getLong("id"));
