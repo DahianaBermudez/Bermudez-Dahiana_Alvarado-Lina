@@ -12,7 +12,6 @@ import com.backend.clinica_odontologica.repository.dbConnection.H2Connection;
 @SpringBootApplication
 public class ClinicaOdontologicaApplication {
 	private static Logger LOGGER = LoggerFactory.getLogger(ClinicaOdontologicaApplication.class);
-
 	public static void main(String[] args) {
 
 		SpringApplication.run(ClinicaOdontologicaApplication.class, args);
