@@ -5,8 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 import com.backend.clinica_odontologica.repository.dbConnection.H2Connection;
 
 @SpringBootApplication
@@ -15,8 +13,9 @@ public class ClinicaOdontologicaApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(ClinicaOdontologicaApplication.class, args);
 		H2Connection.crearTablas();
+		SpringApplication.run(ClinicaOdontologicaApplication.class, args);
+
 		LOGGER.info("clinicaOdontologica is now running...");
 	}
 

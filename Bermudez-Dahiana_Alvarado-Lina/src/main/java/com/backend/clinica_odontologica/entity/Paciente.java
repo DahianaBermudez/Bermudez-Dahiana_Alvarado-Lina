@@ -31,14 +31,6 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
-//    public Paciente(String nombre, String apellido, int dni, LocalDate fechaIngreso, Domicilio domicilio) {
-//        this.nombre = nombre;
-//        this.apellido = apellido;
-//        this.dni = dni;
-//        this.fechaIngreso = fechaIngreso;
-//        this.domicilio = domicilio;
-//    }
-
     public Long getId() {
         return id;
     }
