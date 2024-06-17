@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import com.backend.clinica_odontologica.repository.dbConnection.H2Connection;
+import com.backend.clinica_odontologica.dbConnection.H2Connection;
 
 @SpringBootApplication
 public class ClinicaOdontologicaApplication {
