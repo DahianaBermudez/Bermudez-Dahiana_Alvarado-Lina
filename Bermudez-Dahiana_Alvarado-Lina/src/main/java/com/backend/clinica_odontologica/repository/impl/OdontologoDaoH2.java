@@ -1,9 +1,8 @@
 package com.backend.clinica_odontologica.repository.impl;
 
 import com.backend.clinica_odontologica.entity.Odontologo;
-import com.backend.clinica_odontologica.entity.Paciente;
 import com.backend.clinica_odontologica.repository.IDao;
-import com.backend.clinica_odontologica.repository.dbConnection.H2Connection;
+import com.backend.clinica_odontologica.dbConnection.H2Connection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

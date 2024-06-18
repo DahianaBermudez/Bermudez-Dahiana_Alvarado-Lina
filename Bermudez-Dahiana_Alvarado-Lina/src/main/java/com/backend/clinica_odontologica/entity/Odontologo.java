@@ -1,22 +1,28 @@
 package com.backend.clinica_odontologica.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "ODONTOLOGO")
 public class Odontologo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(length = 20)
     private int numeroDeMatricula;
+    @Column(length = 50)
     private String nombre;
+    @Column(length = 50)
     private String apellido;
 
+    public Odontologo(){
+
+    }
     public Odontologo(Long id, int numeroDeMatricula, String nombre, String apellido) {
         this.id = id;
         this.numeroDeMatricula = numeroDeMatricula;
         this.nombre = nombre;
         this.apellido = apellido;
-    }
-
-    public Odontologo(String apellido, String nombre, int numeroDeMatricula) {
-        this.apellido = apellido;
-        this.nombre = nombre;
-        this.numeroDeMatricula = numeroDeMatricula;
     }
 
     public Long getId() {
