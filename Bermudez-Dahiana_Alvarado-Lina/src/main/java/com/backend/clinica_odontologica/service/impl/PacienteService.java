@@ -1,7 +1,7 @@
 package com.backend.clinica_odontologica.service.impl;
 
 import com.backend.clinica_odontologica.dto.entrada.PacienteEntradaDto;
-import com.backend.clinica_odontologica.dto.salida.PacienteSalidaDTO;
+import com.backend.clinica_odontologica.dto.salida.PacienteSalidaDto;
 import com.backend.clinica_odontologica.entity.Paciente;
 import com.backend.clinica_odontologica.exceptions.ResourceNotFoundException;
 import com.backend.clinica_odontologica.repository.PacienteRepository;
@@ -132,25 +132,25 @@ public class PacienteService implements IPacienteService {
     }
 
     @Override
-    public PacienteSalidaDTO registrarPaciente(PacienteEntradaDto pacienteEntradaDto) {
+    public PacienteSalidaDto registrarPaciente(PacienteEntradaDto pacienteEntradaDto) {
         //logica de negocio
         //mapeo de dto a entidad
-        LOGGER.info("PacienteEntradaDto: " + JsonPrinter.toString(pacienteEntradaDto));
+        LOGGER.info("Endpoint guardar Paciente fue llamado con el request: " + JsonPrinter.toString(pacienteEntradaDto));
         Paciente paciente = modelMapper.map(pacienteEntradaDto, Paciente.class);
-        LOGGER.info("PacienteEntidad: " + JsonPrinter.toString(paciente));
+        LOGGER.info("Objeto a guardar en la BD: " + JsonPrinter.toString(paciente));
         //Paciente pacienteRegistrado = pacienteIDao.registrar(paciente);
         //mapeo de entidad a dto
-        PacienteSalidaDTO pacienteSalidaDTO = modelMapper.map(pacienteRepository.save(paciente), PacienteSalidaDTO.class);
-        LOGGER.info("PacienteSalidaDto: " + JsonPrinter.toString(pacienteSalidaDTO));
+        PacienteSalidaDto pacienteSalidaDTO = modelMapper.map(pacienteRepository.save(paciente), PacienteSalidaDto.class);
+        LOGGER.info("Data guardada de paciente: " + JsonPrinter.toString(pacienteSalidaDTO));
         return pacienteSalidaDTO;
     }
 
     @Override
-    public List<PacienteSalidaDTO> listarPacientes() {
+    public List<PacienteSalidaDto> listarPacientes() {
         //mapeo de lista de entidades a lista de dtos
-        List<PacienteSalidaDTO> pacientes = pacienteRepository.findAll()
+        List<PacienteSalidaDto> pacientes = pacienteRepository.findAll()
                 .stream()
-                .map(paciente -> modelMapper.map(paciente, PacienteSalidaDTO.class))
+                .map(paciente -> modelMapper.map(paciente, PacienteSalidaDto.class))
                 .toList();
         LOGGER.info("Listado de todos los pacientes: {}", JsonPrinter.toString(pacientes));
 
@@ -158,13 +158,13 @@ public class PacienteService implements IPacienteService {
     }
 
     @Override
-    public PacienteSalidaDTO buscarPacientePorId(Long id) {
+    public PacienteSalidaDto buscarPacientePorId(Long id) {
 
         Paciente pacienteBuscado = pacienteRepository.findById(id).orElse(null);
-        PacienteSalidaDTO pacienteEncontrado = null;
+        PacienteSalidaDto pacienteEncontrado = null;
 
         if (pacienteBuscado != null){
-            pacienteEncontrado = modelMapper.map(pacienteBuscado, PacienteSalidaDTO.class);
+            pacienteEncontrado = modelMapper.map(pacienteBuscado, PacienteSalidaDto.class);
             LOGGER.info("Paciente encontrado: {}", JsonPrinter.toString(pacienteEncontrado));
         } else LOGGER.error("No se ha encontrado el paciente con id {}", id);
 
@@ -183,11 +183,11 @@ public class PacienteService implements IPacienteService {
     }
 
     @Override
-    public PacienteSalidaDTO actualizarPaciente(PacienteEntradaDto pacienteEntradaDto, Long id) {
+    public PacienteSalidaDto actualizarPaciente(PacienteEntradaDto pacienteEntradaDto, Long id) {
 
         Paciente pacienteRecibido = modelMapper.map(pacienteEntradaDto, Paciente.class);
         Paciente pacienteAActualizar = pacienteRepository.findById(id).orElse(null);
-        PacienteSalidaDTO pacienteSalidaDTO = null;
+        PacienteSalidaDto pacienteSalidaDTO = null;
 
         if(pacienteAActualizar != null){
 
@@ -204,7 +204,7 @@ public class PacienteService implements IPacienteService {
             //pacienteAActualizar.getDomicilio().setProvincia(pacienteRecibido.getDomicilio().getProvincia());
 
             pacienteRepository.save(pacienteAActualizar);
-            pacienteSalidaDTO = modelMapper.map(pacienteAActualizar, PacienteSalidaDTO.class);
+            pacienteSalidaDTO = modelMapper.map(pacienteAActualizar, PacienteSalidaDto.class);
             LOGGER.warn("Paciente actualizado: {}", JsonPrinter.toString(pacienteSalidaDTO));
 
         } else {
@@ -219,8 +219,8 @@ public class PacienteService implements IPacienteService {
     private void configureMapping(){
         modelMapper.typeMap(PacienteEntradaDto.class, Paciente.class)
                 .addMappings(mapper -> mapper.map(PacienteEntradaDto::getDomicilioEntradaDto, Paciente::setDomicilio));
-        modelMapper.typeMap(Paciente.class, PacienteSalidaDTO.class)
-                .addMappings(mapper -> mapper.map(Paciente::getDomicilio, PacienteSalidaDTO::setDomicilioSalidaDto));
+        modelMapper.typeMap(Paciente.class, PacienteSalidaDto.class)
+                .addMappings(mapper -> mapper.map(Paciente::getDomicilio, PacienteSalidaDto::setDomicilioSalidaDto));
     }
 }
 
