@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Odontológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Odontológica <i class="fa-solid fa-tooth"></i></h1>
+        <button onclick="openModal()"> <i class="fa-solid fa-circle-plus"></i> Agregar Odontólogo </button>
+    </header>
+    <main>
+        <h2 class="title"> Listado de turnos <i class="fa-solid fa-calendar"></i></h2>
+        <div class="card">
+            <h2>Turno 1</h2>
+            <p class="date"><i class="fas fa-calendar-alt"></i>2024-06-18</p>
+            <p class="dentist"><strong>Odontólogo:</strong> Dr. Juan Pérez</p>
+            <p class="patient"></p><strong>Paciente:</strong> María López</p>
+        </div>
+       
+        <!-- Agregar más cards según sea necesario -->
+    </main>
+    <main>
+        <h2 class="title"> Listado de Odontólogos <i class="fa-solid fa-user"></i></h2>
+        <div class="card">
+            <p class="dentist">Odontólogo Dr. Juan Pérez</p>
+        </div>
+       
+        <!-- Agregar más cards según sea necesario -->
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Agregar Odontólogo</h2>
+            <form>
+                <label for="name-dentist">Nombre:</label>
+                <input type="text" id="name-dentist" name="name-dentist" required>
+
+                <label for="lastName-dentist">Apellido:</label>
+                <input type="text" id="lastName-dentist" name="lastName-dentist" required>
+
+                <label for="nummber-license">Fecha:</label>
+                <input type="number" id="nummber-license" name="nummber-license" required>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+    </div>
+
+     <script>
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
