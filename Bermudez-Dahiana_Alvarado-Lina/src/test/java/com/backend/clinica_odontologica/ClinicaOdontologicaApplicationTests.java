@@ -1,20 +1,5 @@
 package com.backend.clinica_odontologica;
 
-import com.backend.clinica_odontologica.dto.entrada.PacienteEntradaDto;
-import com.backend.clinica_odontologica.entity.Domicilio;
-import com.backend.clinica_odontologica.entity.Paciente;
-import com.backend.clinica_odontologica.repository.impl.OdontologoDaoH2;
-import com.backend.clinica_odontologica.repository.impl.OdontologoDaoMemory;
-import com.backend.clinica_odontologica.repository.impl.PacienteDaoH2;
-import com.backend.clinica_odontologica.service.impl.OdontologoService;
-import com.backend.clinica_odontologica.service.impl.PacienteService;
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.time.LocalDate;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 //@SpringBootTest
 //class ClinicaOdontologicaApplicationTests {
 //

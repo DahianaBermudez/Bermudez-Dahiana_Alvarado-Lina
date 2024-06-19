@@ -91,16 +91,8 @@ public class TurnoService implements ITurnoService {
 
         if(turnoAActualizar != null){
 
-            turnoRecibido.setIdTurno(turnoAActualizar.getIdTurno());
+            turnoRecibido.setId(turnoAActualizar.getId());
             turnoAActualizar = turnoRecibido;
-
-            //turnoAActualizar.setNombre(turnoRecibido.getNombre());
-            //turnoAActualizar.setApellido(turnoRecibido.getApellido());
-            //turnoAActualizar.setDni(turnoRecibido.getDni());
-            //turnoAActualizar.setFechaIngreso(turnoRecibido.getFechaIngreso());
-            //turnoAActualizar.getDomicilio().setNumero(turnoRecibido.getDomicilio().getNumero());
-            //turnoAActualizar.getDomicilio().setLocalidad(turnoRecibido.getDomicilio().getLocalidad());
-            //turnoAActualizar.getDomicilio().setProvincia(turnoRecibido.getDomicilio().getProvincia());
 
             turnoRepository.save(turnoAActualizar);
             turnoSalidaDto = modelMapper.map(turnoAActualizar, TurnoSalidaDto.class);
@@ -120,8 +112,6 @@ public class TurnoService implements ITurnoService {
         modelMapper.typeMap(TurnoEntradaDto.class, Turno.class)
                 .addMappings(mapper -> mapper.map(TurnoEntradaDto::getIdOdontologo, Turno::setOdontologo))
                 .addMappings(mapper -> mapper.map(TurnoEntradaDto::getIdPaciente, Turno::setPaciente));
-        //modelMapper.typeMap(Turno.class, TurnoSalidaDto.class)
-          //      .addMappings(mapper -> mapper.map(Turno::getDomicilio, TurnoSalidaDto::setDomicilioSalidaDto));
     }
 }
 

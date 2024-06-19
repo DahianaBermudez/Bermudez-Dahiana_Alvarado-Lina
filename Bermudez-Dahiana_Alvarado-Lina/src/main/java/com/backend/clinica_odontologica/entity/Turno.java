@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idTurno;
+    private Long id;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
@@ -20,19 +20,19 @@ public class Turno {
     public Turno() {
     }
 
-    public Turno(Long idTurno, Paciente paciente, Odontologo odontologo, LocalDateTime fechaHora) {
-        this.idTurno = idTurno;
+    public Turno(Long id, Paciente paciente, Odontologo odontologo, LocalDateTime fechaHora) {
+        this.id = id;
         this.paciente = paciente;
         this.odontologo = odontologo;
         this.fechaHora = fechaHora;
     }
 
-    public Long getIdTurno() {
-        return idTurno;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdTurno(Long idTurno) {
-        this.idTurno = idTurno;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Paciente getPaciente() {
