@@ -14,21 +14,16 @@
         <button onclick="openModal()"> <i class="fa-solid fa-circle-plus"></i> Agregar Odontólogo </button>
     </header>
     <main>
+       
         <h2 class="title"> Listado de turnos <i class="fa-solid fa-calendar"></i></h2>
-        <div class="card">
-            <h2>Turno 1</h2>
-            <p class="date"><i class="fas fa-calendar-alt"></i>2024-06-18</p>
-            <p class="dentist"><strong>Odontólogo:</strong> Dr. Juan Pérez</p>
-            <p class="patient"></p><strong>Paciente:</strong> María López</p>
-        </div>
+        <div id="slideContainer"></div>
        
         <!-- Agregar más cards según sea necesario -->
     </main>
+    
     <main>
         <h2 class="title"> Listado de Odontólogos <i class="fa-solid fa-user"></i></h2>
-        <div class="card">
-            <p class="dentist">Odontólogo Dr. Juan Pérez</p>
-        </div>
+        <div id="slideContainerOdontologo"></div>
        
         <!-- Agregar más cards según sea necesario -->
     </main>
@@ -44,22 +39,16 @@
                 <label for="lastName-dentist">Apellido:</label>
                 <input type="text" id="lastName-dentist" name="lastName-dentist" required>
 
-                <label for="nummber-license">Fecha:</label>
-                <input type="number" id="nummber-license" name="nummber-license" required>
+                <label for="nummber-license">Numero de matricula:</label>
+                <input type="int" id="nummber-license" name="nummber-license" required>
 
                 <button type="submit">Agregar</button>
             </form>
         </div>
     </div>
 
-     <script>
-        function openModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
+     <script src="index.js">
+      
     </script>
 </body>
 </html>
