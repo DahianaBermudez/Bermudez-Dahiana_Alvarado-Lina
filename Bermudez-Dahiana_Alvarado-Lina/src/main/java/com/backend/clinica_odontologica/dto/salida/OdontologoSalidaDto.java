@@ -17,12 +17,6 @@ public class OdontologoSalidaDto {
         this.apellido = apellido;
     }
 
-    public OdontologoSalidaDto(String apellido, String nombre, int numeroDeMatricula) {
-        this.apellido = apellido;
-        this.nombre = nombre;
-        this.numeroDeMatricula = numeroDeMatricula;
-    }
-
     public Long getId() {
         return id;
     }

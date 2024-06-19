@@ -19,6 +19,14 @@ public class TurnoEntradaDto {
 
     }
 
+    public LocalDateTime getFechaHora() {
+        return fechaHora;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
+    }
+
     public Long getIdPaciente() {
         return idPaciente;
     }

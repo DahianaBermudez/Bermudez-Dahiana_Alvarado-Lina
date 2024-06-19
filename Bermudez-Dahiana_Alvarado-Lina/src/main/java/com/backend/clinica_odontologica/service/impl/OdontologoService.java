@@ -30,12 +30,12 @@ public class OdontologoService implements IOdontologoService {
     public OdontologoSalidaDto guardarOdontologo(OdontologoEntradaDto odontologoEntradaDto) {
         //logica de negocio
         //mapeo de dto a entidad
-        LOGGER.info("OdontologoEntradaDto: " + JsonPrinter.toString(odontologoEntradaDto));
+        LOGGER.info("Endpoint guardar odontologo fue llamado con el request: " + JsonPrinter.toString(odontologoEntradaDto));
         Odontologo odontologo = modelMapper.map(odontologoEntradaDto, Odontologo.class);
-        LOGGER.info("OdontologoEntidad: " + JsonPrinter.toString(odontologo));
+        LOGGER.info("Objeto a guardar en la BD: " + JsonPrinter.toString(odontologo));
         //mapeo de entidad a dto
         OdontologoSalidaDto odontologoSalidaDto = modelMapper.map(odontologoRepository.save(odontologo), OdontologoSalidaDto.class);
-        LOGGER.info("OdontologoSalidaDto: " + JsonPrinter.toString(odontologoSalidaDto));
+        LOGGER.info("Data guardada de odontologo: " + JsonPrinter.toString(odontologoSalidaDto));
         return odontologoSalidaDto;
     }
     @Override
