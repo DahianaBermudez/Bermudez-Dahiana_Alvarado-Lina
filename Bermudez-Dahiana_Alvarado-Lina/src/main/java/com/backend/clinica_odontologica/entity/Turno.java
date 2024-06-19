@@ -9,10 +9,10 @@ public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTurno;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "odontologo_id")
     private Odontologo odontologo;
     private LocalDateTime fechaHora;
@@ -37,6 +37,12 @@ public class Turno {
 
     public Paciente getPaciente() {
         return paciente;
+    }
+    public String getPacienteNombre() {
+        return paciente.getNombre();
+    }
+    public String getOdontologoNombre() {
+        return odontologo.getNombre();
     }
 
     public void setPaciente(Paciente paciente) {

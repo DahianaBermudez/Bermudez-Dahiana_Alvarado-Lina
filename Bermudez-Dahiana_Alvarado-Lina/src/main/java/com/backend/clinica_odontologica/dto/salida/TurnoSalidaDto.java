@@ -8,8 +8,8 @@ import java.time.LocalDateTime;
 public class TurnoSalidaDto {
     private Long id;
 
-    private PacienteSalidaDto paciente;
-    private OdontologoSalidaDto odontologo;
+    private String paciente;
+    private String odontologo;
     private LocalDateTime fechaHora;
 
     public TurnoSalidaDto(){
@@ -20,18 +20,18 @@ public class TurnoSalidaDto {
         this.fechaHora = fechaHora;
     }
 
-    public TurnoSalidaDto(Long id, PacienteSalidaDto paciente, OdontologoSalidaDto odontologo, LocalDateTime fechaHora) {
+    public TurnoSalidaDto(Long id, String paciente, String odontologo, LocalDateTime fechaHora) {
         this.id = id;
         this.paciente = paciente;
         this.odontologo = odontologo;
         this.fechaHora = fechaHora;
     }
 
-    public PacienteSalidaDto getPaciente() {
+    public String getPaciente() {
         return paciente;
     }
 
-    public OdontologoSalidaDto getOdontologo() {
+    public String getOdontologo() {
         return odontologo;
     }
 
@@ -39,11 +39,11 @@ public class TurnoSalidaDto {
         return fechaHora;
     }
 
-    public void setPaciente(PacienteSalidaDto paciente) {
+    public void setPaciente(String paciente) {
         this.paciente = paciente;
     }
 
-    public void setOdontologo(OdontologoSalidaDto odontologo) {
+    public void setOdontologo(String odontologo) {
         this.odontologo = odontologo;
     }
 
