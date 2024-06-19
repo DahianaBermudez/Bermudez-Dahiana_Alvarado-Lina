@@ -18,7 +18,9 @@ public class OdontologoController {
 
     private IOdontologoService odontologoService;
 
-    public OdontologoController(IOdontologoService odontologoService){this.odontologoService = odontologoService;}
+    public OdontologoController(IOdontologoService odontologoService) {
+        this.odontologoService = odontologoService;
+    }
 
     //POST
     @PostMapping("/registrar")

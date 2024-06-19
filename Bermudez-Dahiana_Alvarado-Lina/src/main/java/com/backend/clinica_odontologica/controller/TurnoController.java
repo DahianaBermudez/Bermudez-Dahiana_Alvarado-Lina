@@ -17,7 +17,7 @@ import java.util.List;
 public class TurnoController {
 
     private ITurnoService turnoService;
-     public TurnoController(ITurnoService turnoService){this.turnoService = turnoService;}
+    public TurnoController(ITurnoService turnoService){this.turnoService = turnoService;}
 
     //POST
     @PostMapping("/registrar")
