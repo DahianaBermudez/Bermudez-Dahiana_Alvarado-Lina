@@ -36,15 +36,21 @@ public class TurnoService implements ITurnoService {
     }
 
     @Override
-    public TurnoSalidaDto guardarTurno(TurnoEntradaDto turnoEntradaDto) {
+    public TurnoSalidaDto guardarTurno(TurnoEntradaDto turnoEntradaDto) throws ResourceNotFoundException {
         LOGGER.info("TurnoEntradaDto: " + JsonPrinter.toString(turnoEntradaDto));
-        Odontologo o = this.odontologoRepository.findById(turnoEntradaDto.getIdOdontologo()).orElse(null);
-        Paciente p = this.pacienteRepository.findById(turnoEntradaDto.getIdPaciente()).orElse(null);
-        LOGGER.info("odontologo: " + JsonPrinter.toString(o));
-        LOGGER.info("paciente: " + JsonPrinter.toString(p));
+        Odontologo odontologo = this.odontologoRepository.findById(turnoEntradaDto.getIdOdontologo()).orElse(null);
+        Paciente paciente = this.pacienteRepository.findById(turnoEntradaDto.getIdPaciente()).orElse(null);
+        LOGGER.info("odontologo: " + JsonPrinter.toString(odontologo));
+        LOGGER.info("paciente: " + JsonPrinter.toString(paciente));
+        if(odontologo == null){
+            throw new ResourceNotFoundException("No existe registro de odontologo con id " + turnoEntradaDto.getIdOdontologo());
+        }
+        if(paciente == null){
+            throw new ResourceNotFoundException("No existe registro de paciente con id " + turnoEntradaDto.getIdPaciente());
+        }
         Turno turno = new Turno();
-        turno.setPaciente(p);
-        turno.setOdontologo(o);
+        turno.setPaciente(paciente);
+        turno.setOdontologo(odontologo);
         turno.setFechaHora(turnoEntradaDto.getFechaHora());
         LOGGER.info("TurnoEntidad: " + JsonPrinter.toString(turno));
         TurnoSalidaDto turnoSalidaDto = modelMapper.map(turnoRepository.save(turno), TurnoSalidaDto.class);

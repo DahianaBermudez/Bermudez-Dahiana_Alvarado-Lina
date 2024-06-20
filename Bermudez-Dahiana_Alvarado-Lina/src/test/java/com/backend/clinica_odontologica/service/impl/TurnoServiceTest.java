@@ -5,6 +5,7 @@ import com.backend.clinica_odontologica.dto.entrada.OdontologoEntradaDto;
 import com.backend.clinica_odontologica.dto.entrada.PacienteEntradaDto;
 import com.backend.clinica_odontologica.dto.entrada.TurnoEntradaDto;
 import com.backend.clinica_odontologica.dto.salida.TurnoSalidaDto;
+import com.backend.clinica_odontologica.exceptions.ResourceNotFoundException;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Order;
@@ -38,7 +39,7 @@ class TurnoServiceTest {
 
     @Test
     @Order(1)
-    void deberiaRegistrarseUnTurnoConFecha20241202T1500_yRetornarSuId(){
+    void deberiaRegistrarseUnTurnoConFecha20241202T1500_yRetornarSuId() throws ResourceNotFoundException {
         PacienteEntradaDto pacienteEntradaDto = new PacienteEntradaDto("Juan", "Perez", 123456, LocalDate.of(2024, 6, 22), new DomicilioEntradaDto("Calle", 123, "Localidad", "Provincia"));
 
         pacienteService.registrarPaciente(pacienteEntradaDto);

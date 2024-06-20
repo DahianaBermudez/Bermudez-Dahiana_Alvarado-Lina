@@ -7,7 +7,7 @@ import com.backend.clinica_odontologica.exceptions.ResourceNotFoundException;
 import java.util.List;
 
 public interface ITurnoService {
-    TurnoSalidaDto guardarTurno(TurnoEntradaDto turnoEntradaDto);
+    TurnoSalidaDto guardarTurno(TurnoEntradaDto turnoEntradaDto) throws ResourceNotFoundException;
     List<TurnoSalidaDto> listarTurnos();
 
     TurnoSalidaDto buscarTurnoPorId(Long id)throws ResourceNotFoundException;
