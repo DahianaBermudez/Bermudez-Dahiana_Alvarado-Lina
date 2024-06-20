@@ -4,16 +4,16 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "TURNO")
+@Table(name = "TURNOS")
 public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTurno;
     @OneToOne(cascade = CascadeType.REFRESH)
-    @JoinColumn(name = "paciente_id")
+    @JoinColumn(name = "paciente_id", nullable = false)
     private Paciente paciente;
     @OneToOne(cascade = CascadeType.REFRESH)
-    @JoinColumn(name = "odontologo_id")
+    @JoinColumn(name = "odontologo_id" , nullable = false)
     private Odontologo odontologo;
     private LocalDateTime fechaHora;
 

@@ -3,7 +3,7 @@ package com.backend.clinica_odontologica.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ODONTOLOGO")
+@Table(name = "ODONTOLOGOS")
 public class Odontologo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
