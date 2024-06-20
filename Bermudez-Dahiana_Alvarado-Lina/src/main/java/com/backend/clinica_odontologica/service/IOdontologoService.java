@@ -10,9 +10,9 @@ public interface IOdontologoService {
     OdontologoSalidaDto guardarOdontologo(OdontologoEntradaDto odontologoEntradaDto);
     List<OdontologoSalidaDto> listarOdontologos();
 
-    OdontologoSalidaDto buscarOdontologoPorId(Long id);
+    OdontologoSalidaDto buscarOdontologoPorId(Long id) throws ResourceNotFoundException;
 
-    OdontologoSalidaDto actualizarOdontologo(OdontologoEntradaDto odontologoEntradaDto, Long id);
+    OdontologoSalidaDto actualizarOdontologo(OdontologoEntradaDto odontologoEntradaDto, Long id) throws ResourceNotFoundException;
 
     void eliminarOdontologo(Long id) throws ResourceNotFoundException;
 }

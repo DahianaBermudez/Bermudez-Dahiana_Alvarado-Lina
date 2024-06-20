@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 
 public class TurnoSalidaDto {
     private Long id;
-
     private String paciente;
     private String odontologo;
     private LocalDateTime fechaHora;
@@ -16,9 +15,6 @@ public class TurnoSalidaDto {
 
     }
 
-    public void setFechaHora(LocalDateTime fechaHora) {
-        this.fechaHora = fechaHora;
-    }
 
     public TurnoSalidaDto(Long id, String paciente, String odontologo, LocalDateTime fechaHora) {
         this.id = id;
@@ -37,6 +33,10 @@ public class TurnoSalidaDto {
 
     public LocalDateTime getFechaHora() {
         return fechaHora;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
     }
 
     public void setPaciente(String paciente) {

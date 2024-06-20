@@ -15,6 +15,14 @@ public class TurnoEntradaDto {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm")
     private LocalDateTime fechaHora;
 
+    public void setIdPaciente(Long idPaciente) {
+        this.idPaciente = idPaciente;
+    }
+
+    public void setIdOdontologo(Long idOdontologo) {
+        this.idOdontologo = idOdontologo;
+    }
+
     public TurnoEntradaDto(){
 
     }
